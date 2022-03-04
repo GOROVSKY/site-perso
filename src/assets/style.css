@@ -1,0 +1,10 @@
+html, body, #app, .app-container {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+}
