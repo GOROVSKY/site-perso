@@ -4,5 +4,8 @@
   </div>
 </template>
 
+<style src="@/assets/variables.css">
+</style>
+
 <style src="@/assets/style.css">
 </style>
