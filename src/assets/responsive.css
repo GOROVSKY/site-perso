@@ -1,0 +1,14 @@
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 4em;
+        word-spacing: 0.5em;
+        letter-spacing: 0.2em;
+    }
+
+    .page {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+
+}
