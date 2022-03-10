@@ -1,0 +1,71 @@
+.apparition {
+    animation: apparition 0.3s forwards;
+}
+
+.disparition {
+    animation: disparition 0.3s forwards;
+}
+
+.fromRight {
+    animation: fromRight 0.3s forwards;
+}
+
+.toLeft {
+    animation: toLeft 0.3s forwards;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disparition {
+    from {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        left: 100vw;
+        transform: rotate(20deg);
+        z-index: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        z-index: 90;
+    }
+}
+
+@keyframes toLeft {
+    from {
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        z-index: 90;
+    }
+
+    to {
+        opacity: 0;
+        left: -100vw;
+        transform: rotate(-20deg);
+        z-index: 0;
+    }
+}

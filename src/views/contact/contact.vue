@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="header"><router-link to="/">Home</router-link> CONTACT</h1>
+    Contact
   </div>
 </template>
 

@@ -4,11 +4,22 @@
         word-spacing: 0.5em;
         letter-spacing: 0.2em;
     }
+    .title {
+        margin: 30px;
+    }
 
     .page {
         max-width: 1000px;
         margin: auto;
     }
 
+    .page-half {
+        width: 50vw;
+    }
+
+    .d-flex-resp {
+        display: flex;
+        flex-direction: row;
+    }
 
 }

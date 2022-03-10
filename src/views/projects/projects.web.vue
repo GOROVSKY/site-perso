@@ -1,21 +1,28 @@
 <template>
   <div>
-    <h1 class="header"><router-link to="/">Home</router-link> WEB</h1>
-    <a
-      class="page-half d-flex-center bg-warning page-blackjack cursor-pointer"
-      href='https://gorovsky.github.io/'
-    >
-      <div class="voile"></div>
-      <h2 class="text-lg text-bold">BlackJack</h2>
-      <div>
-        VueJs
-      </div>
-    </a>
-    <div class="page-half d-flex-center bg-danger">
-      <h2>Pompier</h2>
+    <div class="d-flex-resp">
+      <a
+        class="page-half page-project-web page-blackjack"
+        :href="urlBlackJack"
+      >
+        <div class="voile"></div>
+        <h2 class="title">BlackJack</h2>
+        <img class="logo" src="@/assets/images/cards.png">
+        <div class="project-detail">VueJs</div>
+      </a>
+      <a
+        class="page-half page-project-web page-emergency"
+        :href="urlEmergency"
+      >
+        <div class="voile"></div>
+        <h2 class="title">Emergency manager</h2>
+        <img class="logo" src="@/assets/images/fire.png">
+        <div class="project-detail">VueJs · Flask · PostgreSQL</div>
+      </a>
     </div>
   </div>
 </template>
 
 <script src="./projects.web.js">
 </script>
+

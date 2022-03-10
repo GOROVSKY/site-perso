@@ -10,16 +10,25 @@ const routes = [
   {
     path: '/projects/web',
     name: 'project.web',
+    meta: {
+      vueName: 'Web projects',
+    },
     component: () => import('../views/projects/projects.web.vue')
   },
   {
     path: '/projects/art',
     name: 'project.art',
+    meta: {
+      vueName: 'Art projects',
+    },
     component: () => import('../views/projects/projects.art.vue')
   },
   {
     path: '/contact',
     name: 'contact',
+    meta: {
+      vueName: 'Contact',
+    },
     component: () => import('../views/contact/contact.vue')
   }
 ]
@@ -28,5 +37,7 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
+
+
 
 export default router

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="header"><router-link to="/">Home</router-link> ART</h1>
+    ART
   </div>
 </template>
 

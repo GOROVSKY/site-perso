@@ -10,6 +10,7 @@ h1 {
     font-size: 2.5em;
     word-spacing: 0.5em;
     letter-spacing: 0.1em;
+    font-family: 'Roboto Slab', serif;
 }
 
 ul {
@@ -18,17 +19,16 @@ ul {
     margin: 0;
 }
 
-hr {
+.page hr {
     width: 100%;
     margin: 30px 0px;
     border: 2px solid var(--color-orange);
     border-image-slice: 1;
     border-image-source: blue;
-    border-image-source: -webkit-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet);
-    border-image-source: -o-linear-gradient(right,red, orange, yellow, green, cyan, blue, violet);
-    border-image-source: -moz-linear-gradient(right,red, orange, yellow, green, cyan, blue, violet);
-    border-image-source: linear-gradient(to right,red, orange, yellow, green, cyan, blue, violet);
-    color: black;
+    border-image-source: var(--gradient-rainbow-webkit);
+    border-image-source: var(--gradient-rainbow);
+    border-image-source: var(--gradient-rainbow-o);
+    border-image-source: var(--gradient-rainbow-moz);color: black;
     border-radius: 5px;
     box-shadow: 0 0 5px var(--color-white-transparent);
     padding: 0;
@@ -53,10 +53,12 @@ a, a:hover, a:visited {
 }
 
 .page-half {
-    height: 50vh;
+    height: calc(50vh - (var(--height-header) / 2));
     padding: 0 5%;
     position: relative;
+    min-height: 250px;
 }
+
 .d-flex-center {
     display: flex;
     flex-direction: column;
@@ -73,18 +75,60 @@ a, a:hover, a:visited {
     font-weight: 700;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    background-color: var(--color-black);
-    z-index: 100;
+.page-project-web {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    border-bottom: 5px solid white;
+    border-image-slice: 1;
+    box-shadow: 0 0 5px var(--color-white);
+    border-image-source: var(--gradient-rainbow-webkit);
+    border-image-source: var(--gradient-rainbow);
+    border-image-source: var(--gradient-rainbow-o);
+    border-image-source: var(--gradient-rainbow-moz);
+}
+
+.page-project-web:last-child {
+    border-bottom: none
+}
+
+.page-project-web .title {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.page-project-web .logo {
+    width: 20%;
+}
+
+.page-project-web * {
+    transition: 0.2s;
+    /* opacity: 0; */
+}
+
+.page-project-web:hover * {
+    opacity: 0 !important;
+}
+
+.page-project-web .voile {
+    opacity: 0.85;
 }
 
 .page-blackjack {
     background-image: url('./images/blackjack.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+.page-emergency {
+    background-image: url('./images/emergency.jpg');
+}
+
+.project-detail {
+    font-size: 1.5rem;
 }
 
 .voile {
@@ -92,15 +136,63 @@ a, a:hover, a:visited {
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0.8;
+    opacity: 0;
     z-index: 0;
+    transition: 0.2s;
 }
 
-.voile ~ * {
+.voile~* {
     position: relative;
     z-index: 10;
 }
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.container-img {
+    height: 20%;
+    min-height: 150px;
+    position: relative;
+    width: min-content;
+    margin: auto;
+}
+
+.img-circle {
+    border-radius: 50%;
+    height: 100%;
+}
+
+.gradient-blue {
+    background: rgb(23, 35, 49);
+    background: var(--gradient-blue);
+}
+
+.gradient-purple { 
+    background: rgb(33,23,49);
+    background: var(--gradient-purple);
+}
+
+.gradient-red {
+    background: rgb(50,10,10);
+    background: var(--gradient-red); 
+}
+
+.gradient-green {
+    background: rgb(16,50,10);
+    background: var(--gradient-green); 
+}
+
+.gradient-orange {
+    background: rgb(65,36,9);
+    background: var(--gradient-orange); 
+}
+
+.gradient-yellow {
+    background: rgb(62,66,6);
+    background: var(--gradient-yellow); 
+}
+
+.title  {
+    margin: 10px
 }

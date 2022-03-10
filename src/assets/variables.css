@@ -1,7 +1,53 @@
 :root {
-    --color-white: rgb(199, 199, 199);
-    --color-white-transparent: rgb(199, 199, 199, 0.5);
-    --color-red: rgb(121, 0, 0);
-    --color-orange: rgb(255, 108, 23);
-    --color-black: rgb(31, 31, 31);
-  }
+  --color-white: rgb(199, 199, 199);
+  --color-white-transparent: rgb(199, 199, 199, 0.5);
+  --color-red: rgb(121, 0, 0);
+  --color-orange: rgb(255, 108, 23);
+  --color-black: rgb(31, 31, 31);
+  --color-dark-black: rgb(17, 17, 17);
+  --color-dark-pink: #440136;
+  --height-header: 70px;
+  --gradient-rainbow-webkit: -webkit-linear-gradient(left,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet);
+  --gradient-rainbow-o: -o-linear-gradient(left,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet);
+  --gradient-rainbow-moz: -moz-linear-gradient(left,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet);
+  --gradient-rainbow: linear-gradient(to left,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet);
+  --gradient-blue: linear-gradient(90deg,
+      rgba(23, 35, 49, 1) 0%,
+      rgba(31, 56, 84, 1) 100%);
+  --gradient-purple: linear-gradient(90deg, rgba(33, 23, 49, 1) 0%, rgba(58, 31, 84, 1) 100%);
+  --gradient-red: linear-gradient(90deg, rgba(50,10,10,1) 0%, rgba(97,9,9,1) 100%);
+  --gradient-green: linear-gradient(90deg, rgba(16,50,10,1) 0%, rgba(19,97,9,1) 100%);
+  --gradient-orange: linear-gradient(90deg, rgba(65,36,9,1) 0%, rgba(119,64,7,1) 100%);
+  --gradient-yellow: linear-gradient(90deg, rgba(62,66,6,1) 0%, rgba(153,153,6,1) 100%);
+
+
+  --height-shortcut: 54px;
+}
