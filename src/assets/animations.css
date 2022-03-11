@@ -14,6 +14,14 @@
     animation: toLeft 0.3s forwards;
 }
 
+.apparition-menu {
+    animation: apparition-menu 0.3s forwards;
+}
+
+.disparition-menu {
+    animation: disparition-menu 0.3s forwards;
+}
+
 @keyframes apparition {
     from {
         opacity: 0;
@@ -67,5 +75,33 @@
         left: -100vw;
         transform: rotate(-20deg);
         z-index: 0;
+    }
+}
+
+@keyframes apparition-menu {
+    from {
+        opacity: 0;
+        left: -35vw;
+        z-index: -10;
+    }
+
+    to {
+        opacity: 1;
+        left: 0;
+        z-index: 90;
+    }
+}
+
+@keyframes disparition-menu {
+    from {
+        opacity: 1;
+        left: 0;
+        z-index: 90;
+    }
+
+    to {
+        opacity: 0;
+        left: -35vw;
+        z-index: -10;
     }
 }

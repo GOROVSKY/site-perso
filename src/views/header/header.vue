@@ -1,13 +1,10 @@
 <template>
   <div class="header">
-    <!-- <div class="container-img">
-      <img
-        src="../../assets/images/face_1.jpeg"
-        class="img img-circle cursor-pointer"
-        @click="$router.push('/')"
-      />
-    </div> -->
-    <div class="text-start" @click="$router.push('/')">
+    <div
+      class="text-start cursor-pointer"
+      style="line-height: 1.2"
+      @click="$router.push('/')"
+    >
       <div style="font-size: 0.8rem">Guillaume Laville</div>
       <div class="text-bold" style="font-size: 1.7rem" id="header-vue-name">
         {{ vueName }}
@@ -19,35 +16,24 @@
     </div>
   </div>
 
-    <div class="menu-float" id="menu-float">
-      <router-link to="/" class="menu-link" @click="menuDisplayed = false">
-        Home
-      </router-link>
-      <hr />
-      <router-link
-        to="/projects/web"
-        class="menu-link"
-        @click="displayMenu()"
-      >
-        Web projects
-      </router-link>
-      <hr />
-      <router-link
-        to="/projects/art"
-        class="menu-link"
-        @click="displayMenu()"
-      >
-        Art projects
-      </router-link>
-      <hr />
-      <router-link
-        to="/contact"
-        class="menu-link"
-        @click="displayMenu()"
-      >
-        Contact
-      </router-link>
-    </div>
+  <div class="menu-float" id="menu-float">
+    <router-link to="/" class="network">
+      <span class="img-circle fa fa-user-circle"></span>
+    </router-link>
+    <hr />
+    <router-link to="/skills" class="network mb-2" @click="displayMenu()"
+      ><span class="img-circle bg-blue fa fa-code"></span
+    ></router-link>
+    <router-link to="/projects/web" class="network mb-2" @click="displayMenu()"
+      ><span class="img-circle bg-purple fa fa-laptop"></span
+    ></router-link>
+    <router-link to="/projects/art" class="network mb-2" @click="displayMenu()"
+      ><span class="img-circle bg-red fa fa-paint-brush"></span
+    ></router-link>
+    <router-link to="/contact" class="network mb-2" @click="displayMenu()"
+      ><span class="img-circle bg-orange fa fa-paper-plane"></span
+    ></router-link>
+  </div>
 </template>
 
 <script src="./header.js">
@@ -71,70 +57,27 @@
 
 .menu-float {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.952);
-  width: 100vw;
-  height: calc(150vh);
+  background-color: rgba(0, 0, 0);
+  width: var(--width-menu-float);
+  height: calc(100vh);
   top: var(--height-header);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5%;
   opacity: 0;
+  z-index: -10;
 }
 
-.menu-link {
-  font-weight: 700;
-  font-size: 2rem;
+.menu-float .router-link-active .fa {
+  border-color: white !important;
+}
+.menu-float .router-link-active .fa::before {
+  color: white;
 }
 
-.menu-float hr {
-  border: 2px solid var(--color-white);
-  width: 100%;
-}
-
-.menu-float .router-link-active {
-  background: -webkit-linear-gradient(
-    left,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -o-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -moz-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.menu-float .network .fa {
+  border-color: var(--purple-light);
 }
 
 .header {
@@ -147,49 +90,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
-  border-bottom: 2px solid var(--color-orange);
+  border-bottom: 2px solid var(--color-green);
   border-image-slice: 1;
-  border-image-source: blue;
-  border-image-source: -webkit-linear-gradient(
-    left,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  border-image-source: -o-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  border-image-source: -moz-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  border-image-source: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
+  border-image-source: var(--gradient-webkit);
+  border-image-source: var(--gradient-rainbow-webkit);
+  border-image-source: var(--gradient-rainbow);
+  border-image-source: var(--gradient-rainbow-o);
+  border-image-source: var(--gradient-rainbow-moz);
+
   box-shadow: 0 0 5px var(--color-white-transparent);
 }
 

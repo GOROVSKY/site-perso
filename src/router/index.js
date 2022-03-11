@@ -19,7 +19,7 @@ const routes = [
     path: '/projects/art',
     name: 'project.art',
     meta: {
-      vueName: 'Art projects',
+      vueName: 'Artistic creations',
     },
     component: () => import('../views/projects/projects.art.vue')
   },
@@ -30,6 +30,14 @@ const routes = [
       vueName: 'Contact',
     },
     component: () => import('../views/contact/contact.vue')
+  },
+  {
+    path: '/skills',
+    name: 'skills',
+    meta: {
+      vueName: 'Education & Skills',
+    },
+    component: () => import('../views/skills/skills.vue')
   }
 ]
 

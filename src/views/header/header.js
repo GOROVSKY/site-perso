@@ -24,14 +24,16 @@ export default {
             this.menuDisplayed = !this.menuDisplayed;
 
             if (this.menuDisplayed) {
+                //Buttons
                 btnBars.classList.remove("apparition");
                 btnBars.classList.add("disparition");
                 
                 btnClose.classList.remove("disparition");
                 btnClose.classList.add("apparition");
 
-                menuFloat.classList.remove("toLeft");
-                menuFloat.classList.add("fromRight");
+                //Menu
+                menuFloat.classList.remove("disparition-menu");
+                menuFloat.classList.add("apparition-menu");
             } else {
                 btnClose.classList.remove("apparition");
                 btnClose.classList.add("disparition");
@@ -39,8 +41,8 @@ export default {
                 btnBars.classList.remove("disparition");
                 btnBars.classList.add("apparition");
                 
-                menuFloat.classList.remove("fromRight");
-                menuFloat.classList.add("toLeft");
+                menuFloat.classList.remove("apparition-menu");
+                menuFloat.classList.add("disparition-menu");
             }
         }
     }
