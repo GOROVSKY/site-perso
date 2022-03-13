@@ -61,20 +61,41 @@
           </td>
           <td>
             <div><b>CPE - Engineering school in digital science</b></div>
-            <div>Integrated work and study programme specializing in web development</div>
+            <div>
+              Integrated work and study programme specializing in web
+              development
+            </div>
             <div class="project" style="font-size: 0.9rem">
               <i>Web applications :</i>
             </div>
             <ul style="font-size: 0.9rem">
               <li><i>Calculate trips for electric cars - VueJs</i></li>
-              <li><i>Emergency manager for firehouses - VueJs - Flask - Postgres</i></li>
+              <li>
+                <i
+                  >Emergency manager for firehouses - VueJs - Flask -
+                  Postgres</i
+                >
+              </li>
             </ul>
           </td>
         </tr>
       </tbody>
     </table>
     <hr />
+    <h1 class="title">Intership</h1>
+    <div class="padding">
+      <div>
+        Since 2020, I work at Bat'Image, a design office specialized in the
+        field of house construction.
+      </div>
+      <div>
+        I operate as a full stack web developer. I code the backend service with
+        C# and use the framework VueJs to create customer interfaces.  
+      </div>
+    </div>
+    <hr />
     <h1 class="title">Web skills</h1>
+    <div class="backend">C#</div>
   </div>
 </template>
 
@@ -83,10 +104,10 @@
 
 <style scoped>
 ul {
-    list-style-type: initial;
-    padding: initial;
-    margin: initial;
-    padding-left: 40px;
+  list-style-type: initial;
+  padding: initial;
+  margin: initial;
+  padding-left: 40px;
 }
 
 .table-education .project {
