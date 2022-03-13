@@ -7,7 +7,7 @@
         "<b>SYSTEMATIS SOLARIS</b>".
       </div>
       <div>
-        You can listen my <b>9 songs</b> on every streaming music applications.
+        You can listen my <b>9 songs</b> on every music streaming application.
       </div>
       <a
         href="https://www.youtube.com/channel/UCgC910SfBDjaSwSdkz00cSQ"
@@ -29,7 +29,7 @@
       <a
         href="https://www.instagram.com/guillaume.laville/"
         class="shortcut gradient-instagram"
-        ><span class="img-circle fa fa-instagram"></span
+        ><span class="img-circle fa fa-instagram text-white"></span
         ><span class="shortcut-text text-insta">My instagram page</span></a
       >
     </div>

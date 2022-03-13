@@ -82,7 +82,7 @@
       </tbody>
     </table>
     <hr />
-    <h1 class="title">Intership</h1>
+    <h1 class="title">Internship</h1>
     <div class="padding">
       <div class="mb-3">
         Since 2020, I work at Bat'Image, a <b>design office</b> specialized in
@@ -104,7 +104,7 @@
         </div>
       </div>
       <div class="mb-3">
-        I operate as a full stack web developer. I code the backend service in
+        I operate as a full stack web developer. I code the back-end service in
         <b>C#</b> and use the framework <b>VueJs</b> to create customer
         interfaces.
       </div>
@@ -123,14 +123,14 @@
     <h1 class="title">Web skills</h1>
     <div class="padding skills">
       <div>
-        <h1 class="title-sm">Backend</h1>
+        <h1 class="title-sm">Back-end</h1>
         <div class="skills-container backend">
           <span>C#</span><span>Java</span>
         </div>
       </div>
-      <h1 class="title-sm">Frontend</h1>
+      <h1 class="title-sm">Front-end</h1>
       <div class="skills-container frontend">
-        <span>VueJs</span><span>HTML/CSS</span><span>Javascript</span>
+        <span>VueJs</span><span>HTML/CSS</span><span>JavaScript</span>
         <span>PHP</span>
       </div>
       <h1 class="title-sm">Database</h1>
@@ -146,7 +146,7 @@
       <h1 class="title">Web projects</h1>
       <div>
         Discover some web projects that I developed during my school curriculum
-        and my free time
+        and my free time.
       </div>
       <router-link to="/projects/web" class="shortcut gradient-purple"
         ><span class="img-circle fa fa-laptop"></span
