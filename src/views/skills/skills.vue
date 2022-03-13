@@ -1,5 +1,5 @@
 <template>
-  <div class="page pt-3">
+  <div class="page p-1 pt-3">
     <h1 class="title">Education</h1>
 
     <table class="table-education">
@@ -84,18 +84,75 @@
     <hr />
     <h1 class="title">Intership</h1>
     <div class="padding">
-      <div>
-        Since 2020, I work at Bat'Image, a design office specialized in the
-        field of house construction.
+      <div class="mb-3">
+        Since 2020, I work at Bat'Image, a <b>design office</b> specialized in
+        the field of house construction.
       </div>
       <div>
-        I operate as a full stack web developer. I code the backend service with
-        C# and use the framework VueJs to create customer interfaces.  
+        The company offers a web solution that allows salesmen
+        <b>to accurately estimate</b> the homes price that they want to sell.
+      </div>
+      <div class="networks">
+        <div class="network">
+          <span class="fa fa-house-user img-circle bg-green"></span>
+        </div>
+        <div class="network">
+          <span class="fa fa-euro-sign img-circle bg-blue"></span>
+        </div>
+        <div class="network">
+          <span class="fa fa-code img-circle bg-purple"></span>
+        </div>
+      </div>
+      <div class="mb-3">
+        I operate as a full stack web developer. I code the backend service in
+        <b>C#</b> and use the framework <b>VueJs</b> to create customer
+        interfaces.
+      </div>
+      <div>
+        My professional missions :
+        <ul>
+          <li>
+            <b>Migration</b> of existing applications to the framework VueJs
+          </li>
+          <li>Developement of an application of <b>statistics</b></li>
+          <li>Creation of a new <b>after-sales management module</b></li>
+        </ul>
       </div>
     </div>
     <hr />
     <h1 class="title">Web skills</h1>
-    <div class="backend">C#</div>
+    <div class="padding skills">
+      <div>
+        <h1 class="title-sm">Backend</h1>
+        <div class="skills-container backend">
+          <span>C#</span><span>Java</span>
+        </div>
+      </div>
+      <h1 class="title-sm">Frontend</h1>
+      <div class="skills-container frontend">
+        <span>VueJs</span><span>HTML/CSS</span><span>Javascript</span>
+        <span>PHP</span>
+      </div>
+      <h1 class="title-sm">Database</h1>
+      <div class="skills-container database">
+        <span>MySQL</span><span>PostgreSQL</span><span>SQL Server</span>
+      </div>
+      <h1 class="title-sm">Other tools</h1>
+      <div class="skills-container tools">
+        <span>GIT</span><span>SVN</span><span>Visual Studio</span
+        ><span>.Net</span><span>FastReport</span>
+      </div>
+      <hr />
+      <h1 class="title">Web projects</h1>
+      <div>
+        Discover some web projects that I developed during my school curriculum
+        and my free time
+      </div>
+      <router-link to="/projects/web" class="shortcut gradient-purple"
+        ><span class="img-circle fa fa-laptop"></span
+        ><span class="shortcut-text">Digital projects</span></router-link
+      >
+    </div>
   </div>
 </template>
 
@@ -103,6 +160,37 @@
 </script>
 
 <style scoped>
+.skills .title-sm {
+  margin-bottom: 10px !important;
+}
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-container span {
+  background-color: var(--color-pink);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--color-white);
+  font-weight: 600;
+}
+.skills-container span:last-child {
+  margin-right: 0;
+}
+
+.frontend span {
+  background-color: var(--color-purple);
+}
+.database span {
+  background-color: var(--color-blue);
+}
+.tools span {
+  background-color: var(--color-red);
+}
+
 ul {
   list-style-type: initial;
   padding: initial;
@@ -154,7 +242,7 @@ table tr td:last-child {
 .education {
   display: flex;
 }
-.education .network {
+.network {
   cursor: default !important;
 }
 

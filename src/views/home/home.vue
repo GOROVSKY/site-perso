@@ -54,6 +54,3 @@
 
 <script src="./home.js">
 </script>
-
-<style scoped>
-</style>

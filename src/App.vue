@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <Header v-if="$route.name != 'home'"/>
-    <router-view />
+    <router-view :class="{ 'page-with-header' : $route.name != 'home' }" />
   </div>
 </template>
 

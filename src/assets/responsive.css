@@ -15,6 +15,7 @@
 
     .page-half {
         width: 50vw;
+        height: calc(100vh - var(--height-header));
     }
 
     .d-flex-resp {

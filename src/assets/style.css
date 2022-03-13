@@ -56,8 +56,13 @@ a, a:hover, a:visited {
 .page {
     height: 100vh;
 }
+
 .page-padding {
     padding: 0 5%;
+}
+
+.page-with-header {
+    padding-top: var(--height-header) !important;
 }
 
 .header~.page {
@@ -96,13 +101,6 @@ a, a:hover, a:visited {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    border-bottom: 5px solid white;
-    border-image-slice: 1;
-    box-shadow: 0 0 5px var(--color-white);
-    border-image-source: var(--gradient-rainbow-webkit);
-    border-image-source: var(--gradient-rainbow);
-    border-image-source: var(--gradient-rainbow-o);
-    border-image-source: var(--gradient-rainbow-moz);
 }
 
 .page-project-web:last-child {
@@ -206,23 +204,37 @@ a, a:hover, a:visited {
     background: var(--gradient-yellow);
 }
 
+.gradient-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
 .bg-blue {
-    background-color: rgb(23, 35, 49) !important;
+    background-color: var(--color-blue) !important;
 }
 
 .bg-purple {
-    background-color: rgb(33, 23, 49) !important;
+    background-color: var(--color-purple) !important;
 }
 
 .bg-red {
-    background: rgb(50, 10, 10) !important;
+    background: var(--color-red) !important;
 }
 
 .bg-orange {
     background: rgb(65, 36, 9) !important;
 }
+
 .bg-yellow {
     background: rgba(151, 153, 7, 0.568) !important;
+}
+
+.bg-green {
+    background: rgb(16, 50, 10) !important;
+}
+
+.bg-pink {
+    background: var(--color-pink) !important;
 }
 
 
@@ -255,6 +267,10 @@ a, a:hover, a:visited {
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
 }
 
 .shortcut .fa,

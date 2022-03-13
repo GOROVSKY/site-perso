@@ -81,11 +81,12 @@
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
   background-color: var(--color-black);
   height: var(--height-header);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
