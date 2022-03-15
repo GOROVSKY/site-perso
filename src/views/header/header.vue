@@ -10,27 +10,27 @@
         {{ vueName }}
       </div>
     </div>
-    <div @click="displayMenu()" class="container-icons">
+    <div @click="displayMenu()" class="container-icons d-block d-xl-none">
       <i class="fa fa-2x cursor-pointer fa-bars" id="btn-menu-bars"></i>
       <i class="fa fa-2x cursor-pointer fa-times" id="btn-menu-times"></i>
     </div>
   </div>
 
   <div class="menu-float" id="menu-float">
-    <router-link to="/" class="network">
+    <router-link to="/" class="network" title="Home">
       <span class="img-circle fa fa-user-circle"></span>
     </router-link>
     <hr />
-    <router-link to="/skills" class="network mb-2" @click="displayMenu()"
+    <router-link to="/skills" class="network mb-2" @click="displayMenu()" title="Education & Skills"
       ><span class="img-circle bg-blue fa fa-code"></span
     ></router-link>
-    <router-link to="/projects/web" class="network mb-2" @click="displayMenu()"
+    <router-link to="/projects/web" class="network mb-2" @click="displayMenu()" title="Web projects"
       ><span class="img-circle bg-purple fa fa-laptop"></span
     ></router-link>
-    <router-link to="/projects/art" class="network mb-2" @click="displayMenu()"
+    <router-link to="/projects/art" class="network mb-2" @click="displayMenu()" title="Artistic creations"
       ><span class="img-circle bg-red fa fa-paint-brush"></span
     ></router-link>
-    <router-link to="/contact" class="network mb-2" @click="displayMenu()"
+    <router-link to="/contact" class="network mb-2" @click="displayMenu()" title="Contact"
       ><span class="img-circle bg-orange fa fa-paper-plane"></span
     ></router-link>
   </div>
@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding-top: 30px;
   opacity: 0;
   z-index: -10;
 }

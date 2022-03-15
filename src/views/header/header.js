@@ -17,6 +17,8 @@ export default {
 
     methods: {
         displayMenu() {
+            if (window.innerWidth > 1200) return;
+            
             var btnBars = document.getElementById("btn-menu-bars");
             var btnClose = document.getElementById("btn-menu-times");
             var menuFloat = document.getElementById("menu-float");

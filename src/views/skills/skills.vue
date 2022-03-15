@@ -130,8 +130,8 @@
       </div>
       <h1 class="title-sm">Front-end</h1>
       <div class="skills-container frontend">
-        <span>VueJs</span><span>HTML/CSS</span><span>JavaScript</span>
-        <span>PHP</span>
+        <span>HTML/CSS</span><span>JavaScript</span><span>TypeScript</span>
+        <span>PHP</span><span>Bootstrap</span><span>VueJs</span>
       </div>
       <h1 class="title-sm">Database</h1>
       <div class="skills-container database">
@@ -140,7 +140,7 @@
       <h1 class="title-sm">Other tools</h1>
       <div class="skills-container tools">
         <span>GIT</span><span>SVN</span><span>Visual Studio</span
-        ><span>.Net</span><span>FastReport</span>
+        ><span>.Net</span><span>FastReport</span><span>Docker</span><span>CI/CD</span><span>Android Studio</span>
       </div>
       <hr />
       <h1 class="title">Web projects</h1>
