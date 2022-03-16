@@ -82,7 +82,7 @@
       </tbody>
     </table>
     <hr />
-    <h1 class="title">Internship</h1>
+    <h1 class="title">Apprenticeship</h1>
     <div class="padding">
       <div class="mb-3">
         Since 2020, I work at Bat'Image, a <b>design office</b> specialized in
